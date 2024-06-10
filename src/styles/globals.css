@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "PretendardReqular";
+  src: url("../assets/fonts/Pretendard-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "PretendardBold";
+  src: url("../assets/fonts/Pretendard-Bold.otf") format("opentype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "PretendardReqular";
+}
+
+body {
+  font-size: 14px;
+}
+body #root {
+  width: 100%;
+  min-height: 100%;
+}
+
+input,
+select {
+  height: 50px;
+  border-radius: 20px;
+  border: 1px solid #DDDDDD;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline-color: #F470A4;
+}
+
+input::placeholder {
+  color: #AAAAAA;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox] + label {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #99A4BC;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+input[type=checkbox]:not(input[type=checkbox]:checked) + label::after {
+  content: url("../assets/images/noneCheck.svg");
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 2px;
+}
+input[type=checkbox]:checked + label {
+  border: 1px solid #F470A4;
+  border-radius: 50%;
+  background-color: #F470A4;
+}
+input[type=checkbox]:checked + label::after {
+  content: url("../assets/images/checkbox.svg");
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 2px;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.title {
+  font-family: "PretendardBold";
+  font-size: 40px;
+  position: relative;
+}
+.title::after {
+  content: "";
+  background-color: #FDE2ED;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+}
+
+.inptForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.inptForm:last-child {
+  margin-bottom: 0;
+}
+.inptForm label {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+/*# sourceMappingURL=globals.css.map */

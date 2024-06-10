@@ -1,0 +1,76 @@
+// font-face
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: otf ttf) {
+  $src: null;
+  $formats: (
+          otf: 'opentype',
+          ttf: 'truetype',
+  );
+  @each $ext in $exts {
+    $format: map-get($formats, $ext);
+    $src: append($src, url(quote($path)) format(quote($format)), comma);
+  }
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+// color
+$main: #F470A4;
+$sub: #FDE2ED;
+$gray: #AAAAAA;
+$border: #DDDDDD;
+$checkBorder: #99A4BC;
+$buttonGray1: #F8F8F8;
+$buttonGray2: #F0F0F0;
+$buttonGray3: #E9EAEE;
+$buttonGray4: #E8E8E8;
+$buttonGray5: #D9D9D9;
+
+// font-size
+$basic: 14px;
+$size1: 12px;
+$size2: 16px;
+$size3: 18px;
+$size4: 20px;
+$size5: 24px;
+$title: 40px;
+
+// border-radius
+$radius: 20px;
+
+// font-family
+@include font-face("PretendardReqular", "../assets/fonts/Pretendard-Regular.otf", null, null, otf);
+@include font-face("PretendardBold", "../assets/fonts/Pretendard-Bold.otf", null, null, otf);
+$regular: "PretendardReqular";
+$bold: "PretendardBold";
+
+// mixin
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexJustifyBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

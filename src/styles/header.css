@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "PretendardReqular";
+  src: url("../assets/fonts/Pretendard-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "PretendardBold";
+  src: url("../assets/fonts/Pretendard-Bold.otf") format("opentype");
+}
+.headerContainer {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  height: 130px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.headerContainer .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerContainer .logo .logoImg {
+  width: 54px;
+}
+.headerContainer .logo .logoTxt {
+  text-transform: uppercase;
+  margin-left: 15px;
+  font-family: "PretendardBold";
+}
+.headerContainer .logo .logoTxt p {
+  line-height: normal;
+}
+.headerContainer .logo .logoTxt p:nth-child(1) {
+  font-size: 16px;
+}
+.headerContainer .logo .logoTxt p:nth-child(2) {
+  font-size: 32px;
+}
+.headerContainer .headerOption {
+  display: flex;
+  align-items: center;
+}
+.headerContainer .headerOption .friendRequest {
+  height: auto;
+  margin-right: 20px;
+  display: flex;
+}
+.headerContainer .headerOption .friendRequest img {
+  height: 24px;
+}
+.headerContainer .headerOption .search {
+  background-color: #E9EAEE;
+  width: 270px;
+  height: 40px;
+  border: 0;
+  margin-right: 50px;
+  outline: none;
+  cursor: pointer;
+}
+.headerContainer .headerOption .search::placeholder {
+  text-align: center;
+  color: #000000;
+  margin-right: 20px;
+  background: url("../assets/images/search.svg") no-repeat 68% 40%;
+  background-size: 14px;
+}
+.headerContainer .headerOption .logout {
+  display: flex;
+  align-items: center;
+  color: #555555;
+}
+.headerContainer .headerOption .logout::after {
+  content: url("../assets/images/logout.svg");
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=header.css.map */

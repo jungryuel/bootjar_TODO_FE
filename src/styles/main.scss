@@ -1,0 +1,244 @@
+@import "root";
+
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  .bgLayout {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    background-color: #f8f8f8;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .mainWrap {
+    width: 100%;
+    height: calc(100% - 130px);
+    display: flex;
+    .calendarContainer {
+      width: 40%;
+      height: 100%;
+      padding: 50px;
+      @include flexColumn;
+      .monthRecord {
+        @include flexJustifyBetween;
+        margin-top: 40px;
+        .record {
+          width: calc((100% - (20px * 2)) / 3);
+          border: 1px solid $buttonGray4;
+          border-radius: 30px;
+          padding: 20px;
+          @include flexAlignCenter;
+          background-color: $buttonGray1;
+        }
+        .icon {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          box-shadow: 0 2px 4px 0 rgba(0 0 0 / 25%);
+          @include flexCenter;
+          background-color: #FFFFFF;
+        }
+        .recordText {
+          margin-left: 20px;
+          .count {
+            font: {
+              family: $bold;
+              size: $size3;
+            }
+          }
+        }
+      }
+    }
+    .todoContainer {
+      width: 60%;
+      padding: 50px;
+      @include flexColumn;
+      .userProfile {
+        width: 100%;
+        @include flexJustifyBetween;
+        align-items: center;
+        .userInfo {
+          @include flexAlignCenter;
+          p {
+            font: {
+              family: $bold;
+              size: $title;
+            }
+          }
+          .nickname {
+            position: relative;
+            margin: {
+              left: 20px;
+              right: 10px;
+            }
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 20px;
+              background-color: $sub;
+              display: inline-block;
+              z-index: -1;
+            }
+          }
+          .notification {
+            @include flexAlignCenter;
+            margin-left: 20px;
+            position: relative;
+            &.on {
+              &::after {
+                content: '';
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: #FF2F2F;
+                display: block;
+                right: 0;
+                top: 3px;
+              }
+            }
+          }
+          .request {
+            color: #FFFFFF;
+            background-color: $main;
+            border-radius: 16px;
+            height: 40px;
+            width: 100px;
+            @include flexCenter;
+            font-size: $size2;
+            margin-left: 20px;
+          }
+        }
+        .userSetting {
+          button {
+            @include flexAlignCenter;
+            color: #555555;
+            font-size: $size2;
+            img {
+              margin: {
+                left: 5px;
+                bottom: 2px;
+              }
+              height: $size2;
+            }
+          }
+        }
+        .delete {
+          img {
+            height: $size2;
+          }
+        }
+      }
+      .todoWrap {
+        margin-top: 50px;
+        width: 100%;
+        flex: 1;
+        .todoList {
+          margin-top: 20px;
+          width: 100%;
+          &:first-child {
+            margin-top: 0;
+          }
+          .category {
+            margin-bottom: 15px;
+            font: {
+              size: $size5;
+              family: $bold;
+            }
+            margin-left: 20px;
+            @include flexAlignCenter;
+            img {
+              margin-right: 10px;
+            }
+          }
+          .todo {
+            width: 100%;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: $radius;
+            @include flexAlignCenter;
+            margin-bottom: 10px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            p {
+              margin: {
+                left: 10px;
+                right: 10px;
+              }
+              width: calc(100% - 24px - 21px - 12px - 40px);
+              font-size: $size3;
+              cursor: pointer;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            input[type="checkbox"]:checked ~ p {
+              color: #AAAAAA;
+            }
+            .comment {
+              margin-right: 20px;
+              height: 20px;
+            }
+            .move {
+              cursor: grab;
+              &:active {
+                cursor: grabbing;
+              }
+            }
+          }
+        }
+        &.friendTodo {
+          .todo {
+            p {
+              width: calc(100% - 24px - 40px);
+            }
+            .comment {
+              margin-right: 0 !important;
+            }
+          }
+        }
+      }
+      .friendListWrap {
+        margin-top: 50px;
+        .friendListTitle {
+          font: {
+            family: $bold;
+            size: $size3;
+          }
+          margin-bottom: 10px;
+        }
+        .friendList {
+          @include flexAlignCenter;
+          .friend {
+            width: 50px;
+            @include flexColumn;
+            margin-right: 15px;
+            cursor: pointer;
+            img {
+              height: 50px;
+            }
+            p {
+              text-align: center;
+              margin-top: 5px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
