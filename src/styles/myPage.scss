@@ -1,0 +1,164 @@
+@import "root";
+
+.myPageContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  .myPageWrap {
+    text-align: center;
+    width: 300px;
+    height: calc(100vh - 130px);
+    @include flexCenter;
+    flex-direction: column;
+    margin: 0 auto;
+    .profileImg {
+      width: 200px;
+      margin-top: 50px;
+    }
+    .nickname {
+      font: {
+        family: $bold;
+        size: $title;
+      }
+      margin-top: 20px;
+    }
+    .email {
+      margin-top: 10px;
+      color: $gray;
+      font-size: $size4;
+    }
+    .account {
+      margin-top: 50px;
+      @include flexAlignCenter;
+      p {
+        font-size: $size4;
+        margin-right: 10px;
+      }
+      img {
+        height: 20px;
+      }
+    }
+    .myPageBtn {
+      margin-top: 100px;
+      width: 100%;
+      @include flexJustifyBetween;
+      button {
+        border-radius: $radius;
+        @include flexCenter;
+      }
+      .back {
+        width: 90px;
+        height: 50px;
+        background-color: $buttonGray2;
+        img {
+          height: 15px;
+        }
+      }
+      .mdf {
+        width: calc(100% - 90px - 10px);
+        height: 50px;
+        background-color: $sub;
+        color: $main;
+        font-family: $bold;
+        img {
+          height: 12px;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .myPageFormWrap {
+    @include flexCenter;
+    flex-direction: column;
+    height: calc(100vh - 130px);
+    .formContainer {
+      margin-top: 50px;
+      display: flex;
+      .profileImgForm {
+        position: relative;
+        img {
+          width: 200px;
+        }
+        .chngImg {
+          position: absolute;
+          top: 160px;
+          right: 0;
+          background-color: #FFFFFF;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          box-shadow: 0 2px 4px 0 rgba(0 0 0 / 25%);
+          @include flexCenter;
+          &::after {
+            content: url("../assets/images/modifyImg.svg");
+            padding-top: 5px;
+          }
+        }
+      }
+      .inptFormWrap {
+        width: 340px;
+        margin-left: 50px;
+        .chngPw {
+          margin-bottom: 20px;
+          .chngPwHead {
+            @include flexJustifyBetween;
+            align-items: center;
+            button {
+              background-color: $buttonGray5;
+              font-size: $size1;
+              border-radius: 10px;
+              width: 80px;
+              height: 25px;
+              @include flexCenter;
+              margin-bottom: 5px;
+            }
+            & ~ input {
+              margin-bottom: 20px;
+            }
+          }
+        }
+        .nondisclosureYn {
+          margin-top: 20px;
+          padding-top: 20px;
+          border-top: 1px solid $border;
+          .question {
+            @include flexJustifyBetween;
+            font-size: $size2;
+          }
+          .description {
+            color: #888888;
+            font-size: $size1;
+          }
+        }
+      }
+      .signUpBtn {
+        width: 100%;
+        @include flexJustifyBetween;
+        margin-top: 50px;
+        button {
+          border-radius: $radius;
+          @include flexCenter;
+        }
+        .back {
+          width: 90px;
+          height: 50px;
+          background-color: $buttonGray2;
+          img {
+            height: 15px;
+          }
+        }
+        .save {
+          width: calc(100% - 90px - 10px);
+          height: 50px;
+          background-color: $sub;
+          color: $main;
+          font-family: $bold;
+          img {
+            height: 12px;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
