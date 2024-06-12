@@ -148,6 +148,7 @@
   margin-top: 50px;
   width: 100%;
   flex: 1;
+  overflow: auto;
 }
 .mainContainer .mainWrap .todoContainer .todoWrap .todoList {
   margin-top: 20px;

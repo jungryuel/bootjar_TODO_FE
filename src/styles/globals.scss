@@ -24,6 +24,19 @@ body {
 }
 
 input,
+select,
+button {
+  font: {
+    family: $regular !important;
+    size: $basic;
+  }
+  &:read-only,
+  &:disabled {
+    background-color: $buttonGray1;
+    pointer-events: none;
+  }
+}
+input,
 select {
   height: 50px;
   border-radius: $radius;
@@ -74,7 +87,6 @@ button {
   background-color: transparent;
   border: 0;
   cursor: pointer;
-  font-size: $basic;
 }
 
 // common

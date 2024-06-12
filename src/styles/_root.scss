@@ -68,6 +68,11 @@ $bold: "PretendardBold";
   align-items: center;
 }
 
+@mixin flexBaseline {
+  display: flex;
+  align-items: baseline;
+}
+
 @mixin center {
   position: absolute;
   left: 50%;

@@ -29,5 +29,105 @@
   background-color: #FFFFFF;
   border-radius: 30px;
 }
+.modalContainer .modalWrap .modalHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.modalContainer .modalWrap .modalHeader .category {
+  font-family: "PretendardBold";
+}
+.modalContainer .modalWrap .modalHeader .menu::before {
+  content: url("../assets/images/menu.svg");
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.modalContainer .modalWrap .modalBody {
+  width: 100%;
+  margin-top: 10px;
+}
+.modalContainer .modalWrap .modalBody .todo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.modalContainer .modalWrap .modalBody .todo .todoTitle {
+  margin-left: 10px;
+  margin-right: 10px;
+  flex: 1;
+  font-family: "PretendardBold";
+  font-size: 20px;
+}
+.modalContainer .modalWrap .modalBody .todo .date {
+  font-size: 16px;
+  color: #888888;
+}
+.modalContainer .modalWrap .modalBody .todoDesc {
+  width: 100%;
+  font-size: 16px;
+  height: 100px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+.modalContainer .modalWrap .todoComment {
+  width: 100%;
+  max-height: 230px;
+  overflow: auto;
+}
+.modalContainer .modalWrap .todoComment .comment {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.modalContainer .modalWrap .todoComment .comment img {
+  height: 30px;
+}
+.modalContainer .modalWrap .todoComment .comment .commentInfo {
+  flex: 1;
+  margin-left: 10px;
+}
+.modalContainer .modalWrap .todoComment .comment .commentInfo .commentHead {
+  display: flex;
+  align-items: baseline;
+}
+.modalContainer .modalWrap .todoComment .comment .commentInfo .commentHead .nickname {
+  font-family: "PretendardBold";
+}
+.modalContainer .modalWrap .todoComment .comment .commentInfo .commentHead .date {
+  color: #AAAAAA;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.modalContainer .modalWrap .todoComment .comment .menu::after {
+  content: url("../assets/images/menu.svg");
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.modalContainer .modalWrap .postComment {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.modalContainer .modalWrap .postComment input {
+  flex: 1;
+}
+.modalContainer .modalWrap .postComment .send {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  border-radius: 20px;
+  background-color: #FDE2ED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalContainer .modalWrap .postComment .send::after {
+  content: url("../assets/images/send.svg");
+  padding-top: 4px;
+}
 
 /*# sourceMappingURL=todo.css.map */
