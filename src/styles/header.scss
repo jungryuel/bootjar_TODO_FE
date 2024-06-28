@@ -4,10 +4,10 @@
   width: 100%;
   background-color: transparent;
   @include flexJustifyBetween;
-  height: 130px;
+  height: max(6.770833333333333%, 90px); // 1920px / 130px
   padding: {
-    left: 40px;
-    right: 40px;
+    left: min(2.083333333333333%, 40px); // 1920px / 40px
+    right: min(2.083333333333333%, 40px); // 1920px / 40px
   }
   .logo {
     @include flexCenter;

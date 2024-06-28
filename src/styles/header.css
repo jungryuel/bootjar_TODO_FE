@@ -11,9 +11,9 @@
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  height: 130px;
-  padding-left: 40px;
-  padding-right: 40px;
+  height: max(6.7708333333%, 90px);
+  padding-left: min(2.0833333333%, 40px);
+  padding-right: min(2.0833333333%, 40px);
 }
 .headerContainer .logo {
   display: flex;
@@ -32,7 +32,7 @@
   line-height: normal;
 }
 .headerContainer .logo .logoTxt p:nth-child(1) {
-  font-size: 16px;
+  font-size: min(max(13px, 0.8125rem + (1vw - 16px) * 0.9375), 16px);
 }
 .headerContainer .logo .logoTxt p:nth-child(2) {
   font-size: 32px;

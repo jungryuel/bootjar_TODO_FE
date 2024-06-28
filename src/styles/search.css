@@ -18,7 +18,7 @@
   overflow: auto;
 }
 .searchContainer .searchWrap .searchResult {
-  font-size: 24px;
+  font-size: min(max(18px, 1.125rem + (1vw - 16px) * 1.875), 24px);
   color: #888888;
 }
 .searchContainer .searchWrap .searchResult span {
@@ -57,7 +57,7 @@
 }
 .searchContainer .searchWrap .searchList .list .nickname {
   font-family: "PretendardBold";
-  font-size: 40px;
+  font-size: min(max(28px, 1.75rem + (1vw - 16px) * 3.75), 40px);
   margin-top: 10px;
 }
 .searchContainer .searchWrap .searchList .list .account {
