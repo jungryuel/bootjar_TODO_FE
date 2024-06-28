@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "../styles/todo.css";
 import Checkbox from "../component/Checkbox.jsx";
 // img
 import basicProfile from "../assets/images/basicProfile.svg";
+import deleteComment from "../assets/images/deleteComment.svg";
+import mdfComment from "../assets/images/mdfComment.svg";
 
 const Todo = () => {
     return (
@@ -12,13 +14,12 @@ const Todo = () => {
                 <div className="modalWrap">
                     <div className="modalHeader">
                         <p className="category">생활</p>
-                        <div>
-                            <button className="menu"></button>
-                            <div>
-                                <button>수정하기</button>
-                                <button>삭제하기</button>
-                            </div>
+                        <button className="menu">
+                        <div className="menuBtn">
+                            <button>수정하기</button>
+                            <button>삭제하기</button>
                         </div>
+                    </button>
                     </div>
                     <div className="modalBody">
                         <div className="todo">
@@ -39,7 +40,14 @@ const Todo = () => {
                                 </div>
                                 <p className="text">아 몰라앙!</p>
                             </div>
-                            <button className="menu"></button>
+                            <div className="commentBtn">
+                                <button>
+                                    <img src={mdfComment} alt="수정"/>
+                                </button>
+                                <button>
+                                    <img src={deleteComment} alt="삭제"/>
+                                </button>
+                            </div>
                         </li>
                         <li className="comment">
                             <img src={basicProfile} alt={"프로필 사진"}/>
@@ -51,11 +59,18 @@ const Todo = () => {
                                 </div>
                                 <p className="text">미람아,</p>
                             </div>
-                            <button className="menu"></button>
+                            <div className="commentBtn">
+                                <button>
+                                    <img src={mdfComment} alt="수정"/>
+                                </button>
+                                <button>
+                                    <img src={deleteComment} alt="삭제"/>
+                                </button>
+                            </div>
                         </li>
                     </ul>
                     <div className="postComment">
-                        <input type="text" placeholder="댓글 입력" />
+                        <input type="text" placeholder="댓글 입력"/>
                         <button className="send"></button>
                     </div>
                 </div>
