@@ -1,0 +1,43 @@
+@import "root";
+
+.requestFriendList {
+  position: absolute;
+  bottom: -210px;
+  left: -180px;
+  height: 200px;
+  cursor: default;
+  background-color: #FFFFFF;
+  width: 400px;
+  padding: 20px;
+  border-radius: $radius;
+  box-shadow: 0 4px 10px 0 rgba(0 0 0 / 15%);
+  overflow: auto;
+  .list {
+    @include flexAlignCenter;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .friend {
+      button {
+        text-decoration: underline;
+      }
+    }
+    .requestBtn {
+      button {
+        &:first-child {
+          margin-right: 20px;
+          img {
+            height: 12px;
+          }
+        }
+        &:last-child {
+          img {
+            height: 13px;
+          }
+        }
+      }
+    }
+  }
+}
