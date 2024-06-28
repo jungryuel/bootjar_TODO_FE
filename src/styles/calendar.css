@@ -10,6 +10,9 @@
   flex: 1;
   width: 100%;
   height: calc(100vh - 89px - 40px - 130px - 100px);
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .calendar .calendarHeader {
   display: flex;
@@ -17,7 +20,7 @@
 }
 .calendar .calendarHeader p {
   font-family: "PretendardBold";
-  font-size: 24px;
+  font-size: min(max(18px, 1.125rem + (1vw - 16px) * 1.875), 24px);
 }
 .calendar .calendarHeader .chngMonth {
   margin-left: 30px;
@@ -33,13 +36,13 @@
 }
 .calendar .calendarWeek {
   padding-top: min(7.1428571429% - 12px, 40px);
-  padding-bottom: min(7.1428571429% - 12px, 40px);
+  padding-bottom: 10px;
 }
 .calendar .calendarWeek .week {
   width: 14.2857142857%;
   text-align: center;
   font-family: "PretendardBold";
-  font-size: 20px;
+  font-size: min(max(16px, 1rem + (1vw - 16px) * 1.25), 20px);
 }
 .calendar .calendarDays {
   display: flex;
@@ -55,7 +58,7 @@
 }
 .calendar .calendarDays .day .current {
   text-align: center;
-  font-size: 20px;
+  font-size: min(max(16px, 1rem + (1vw - 16px) * 1.25), 20px);
   padding-top: min(7.1428571429% - 12px, 40px);
   padding-bottom: min(7.1428571429% - 12px, 40px);
   cursor: pointer;

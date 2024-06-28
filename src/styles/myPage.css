@@ -27,13 +27,13 @@
 }
 .myPageContainer .myPageWrap .nickname {
   font-family: "PretendardBold";
-  font-size: 40px;
+  font-size: min(max(28px, 1.75rem + (1vw - 16px) * 3.75), 40px);
   margin-top: 20px;
 }
 .myPageContainer .myPageWrap .email {
   margin-top: 10px;
   color: #AAAAAA;
-  font-size: 20px;
+  font-size: min(max(16px, 1rem + (1vw - 16px) * 1.25), 20px);
 }
 .myPageContainer .myPageWrap .account {
   margin-top: 50px;
@@ -41,7 +41,7 @@
   align-items: center;
 }
 .myPageContainer .myPageWrap .account p {
-  font-size: 20px;
+  font-size: min(max(16px, 1rem + (1vw - 16px) * 1.25), 20px);
   margin-right: 10px;
 }
 .myPageContainer .myPageWrap .account img {
@@ -126,7 +126,7 @@
 }
 .myPageContainer .myPageFormWrap .formContainer .inptFormWrap .chngPw .chngPwHead button {
   background-color: #D9D9D9;
-  font-size: 12px;
+  font-size: min(max(10px, 0.625rem + (1vw - 16px) * 0.625), 12px);
   border-radius: 10px;
   width: 80px;
   height: 25px;
@@ -146,11 +146,11 @@
 .myPageContainer .myPageFormWrap .formContainer .inptFormWrap .nondisclosureYn .question {
   display: flex;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: min(max(13px, 0.8125rem + (1vw - 16px) * 0.9375), 16px);
 }
 .myPageContainer .myPageFormWrap .formContainer .inptFormWrap .nondisclosureYn .description {
   color: #888888;
-  font-size: 12px;
+  font-size: min(max(10px, 0.625rem + (1vw - 16px) * 0.625), 12px);
 }
 .myPageContainer .myPageFormWrap .formContainer .signUpBtn {
   width: 100%;

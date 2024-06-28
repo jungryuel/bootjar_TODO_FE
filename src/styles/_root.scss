@@ -30,13 +30,13 @@ $buttonGray4: #E8E8E8;
 $buttonGray5: #D9D9D9;
 
 // font-size
-$basic: 14px;
-$size1: 12px;
-$size2: 16px;
-$size3: 18px;
-$size4: 20px;
-$size5: 24px;
-$title: 40px;
+$basic: min(max(12px, calc(0.75rem + ((1vw - 16px) * 0.625))), 14px); // 14px
+$size1: min(max(10px, calc(0.625rem + ((1vw - 16px) * 0.625))), 12px); // 12px
+$size2: min(max(13px, calc(0.8125rem + ((1vw - 16px) * 0.9375))), 16px); // 16px
+$size3: min(max(15px, calc(0.9375rem + ((1vw - 16px) * 0.9375))), 18px); // 18px
+$size4: min(max(16px, calc(1rem + ((1vw - 16px) * 1.25))), 20px); // 20px
+$size5: min(max(18px, calc(1.125rem + ((1vw - 16px) * 1.875))), 24px); // 24px
+$title: min(max(28px, calc(1.75rem + ((1vw - 16px) * 3.75))), 40px); // 40px
 
 // border-radius
 $radius: 20px;

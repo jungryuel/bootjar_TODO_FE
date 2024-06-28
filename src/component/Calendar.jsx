@@ -132,7 +132,7 @@ const Calendar = ({
     const calendarRows = divideWeek(calendarTags);
 
     return (
-        <div className="calendar">
+        <>
             <div className="calendarHeader">
                 <p>{currentMonth.getFullYear()}년 {currentMonth.getMonth() + 1}월</p>
                 <div className="chngMonth">
@@ -162,7 +162,7 @@ const Calendar = ({
                     <li key={i} className="day">{row}</li>
                 ))}
             </ul>
-        </div>
+        </>
     );
 };
 

@@ -45,7 +45,9 @@ const FriendMain = () => {
                                 </div>
                             </div>
                             <div className="record">
-                                <img src={commentCount} alt={"댓글"}/>
+                                <span className="icon commentIcon">
+                                    <img src={commentCount} alt={"댓글"}/>
+                                </span>
                                 <div className="recordText">
                                     <p>댓글</p>
                                     <p className="count">3</p>

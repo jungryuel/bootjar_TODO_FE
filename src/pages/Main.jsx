@@ -46,7 +46,9 @@ const Main = () => {
                                 </div>
                             </div>
                             <div className="record">
-                                <img src={commentCount} alt={"댓글"}/>
+                                <span className="icon commentIcon">
+                                    <img src={commentCount} alt={"댓글"}/>
+                                </span>
                                 <div className="recordText">
                                     <p>댓글</p>
                                     <p className="count">17</p>
@@ -60,7 +62,6 @@ const Main = () => {
                                 <img src={basicProfile} alt={"프로필 사진"}/>
                                 <p className="nickname">rnirarn</p>
                                 <p>TODO</p>
-                                <button className="notification on"><img src={notification} alt={"알림"} /></button>
                             </div>
                             <div className="userSetting">
                                 <button>내 정보<img src={setting} alt={""} /></button>
