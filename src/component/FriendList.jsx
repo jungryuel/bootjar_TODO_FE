@@ -4,7 +4,7 @@ import {getFriends} from "../api_f/friend.js";
 
 const FriendList = () => {
     const [friends, setFriends] = useState([]);
-    const token = 'your-auth-token'; // Make sure to replace this with the actual token
+    const token = 'your-auth-token'; // 수정해야 함
 
     const getFriendList = async () => {
         try {
