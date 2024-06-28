@@ -6,6 +6,6 @@ export const getFriends = async (data) => {
 };
 
 export const getSearchList = async (data) => {
-    const res = await api_user("/users/search", "get", data);
+    const res = await api_user("/users/search?nickname="+data.nickname, "get", data);
     return res;
 };
