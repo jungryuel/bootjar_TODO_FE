@@ -13,6 +13,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Todo />}></Route>
+          <Route path="/signup" element={<SignUp />}></Route>
+          <Route path="/login" element={<SignIn />}></Route>
           {/*<Route path="/product/*" element={<Product />}></Route>*/}
           {/*<Route path="*" element={<NotFound />}></Route>*/}
         </Routes>
