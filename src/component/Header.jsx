@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 import "../styles/header.css";
-// img
 import logo from "../assets/images/logo.svg";
 import friendRequest from "../assets/images/friendRequest.svg";
 import { useNavigate } from "react-router-dom";
 import RequestFriendList from "./RequestFriendList.jsx";
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
     const navigate = useNavigate();
+
+    const logout = () => {
+        localStorage.removeItem('token');
+        navigate('/login');
+
     const [searchValue, setSearchValue] = useState('');
     const [isOpen, setIsOpen] = useState(false);
 
@@ -19,6 +24,7 @@ const Header = () => {
 
     const handleChange = (event) => {
         setSearchValue(event.target.value);
+
     };
 
     return (
@@ -32,6 +38,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="headerOption">
+
                     <button onClick={() => setIsOpen(!isOpen)} className="friendRequest"><img src={friendRequest} alt={"친구요청"}/>
                         {
                             isOpen ? <RequestFriendList /> : <></>
@@ -45,7 +52,7 @@ const Header = () => {
                         onChange={handleChange}
                         onKeyDown={handleKeyPress}
                     />
-                    <button className="logout">로그아웃</button>
+                    <button className="logout" onClick={logout}>로그아웃</button>
                 </div>
             </div>
         </>

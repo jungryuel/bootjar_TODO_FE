@@ -18,6 +18,7 @@ function App() {
           // <Route path="/" element={<Todo />}></Route> // 이 부분 충돌 나서 제가 임의로 주석 처리 해놔요 -부자
           <Route path="/signup" element={<SignUp />}></Route>
           <Route path="/login" element={<SignIn />}></Route>
+          <Route path="/home" element={<Main />}></Route>
           {/*<Route path="/product/*" element={<Product />}></Route>*/}
           {/*<Route path="*" element={<NotFound />}></Route>*/}
         </Routes>
