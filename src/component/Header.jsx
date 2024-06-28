@@ -3,6 +3,7 @@ import "../styles/header.css";
 // img
 import logo from "../assets/images/logo.svg";
 import friendRequest from "../assets/images/friendRequest.svg";
+import RequestFriendList from "./RequestFriendList.jsx";
 
 const Header = () => {
     return (
@@ -16,7 +17,9 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="headerOption">
-                    <button className="friendRequest"><img src={friendRequest} alt={"친구요청"}/></button>
+                    <button className="friendRequest"><img src={friendRequest} alt={"친구요청"}/>
+                        <RequestFriendList></RequestFriendList>
+                    </button>
                     <input type="text" className="search" placeholder="친구 검색"/>
                     <button className="logout">로그아웃</button>
                 </div>
