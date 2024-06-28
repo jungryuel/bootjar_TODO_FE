@@ -7,11 +7,12 @@ import next from "../assets/images/next.svg";
 const Calendar = ({
                       isPrevMonth,
                       isNextMonth,
+                      setDate,
                   }) => {
     const daysOfWeek = ["일", "월", "화", "수", "목", "금", "토"];
     const [currentMonth, setCurrentMonth] = useState(new Date());
 
-    const today = new Date();
+    const [today, setToday] = useState(new Date());
     today.setHours(0, 0, 0, 0);
 
     const prevCalendar = () => {
@@ -88,6 +89,19 @@ const Calendar = ({
         return days;
     };
 
+    const formatDateString = (date) => {
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        return `${year}-${month}-${day}`;
+    };
+
+    const handleDateClick = (date) => {
+        const formattedDate = formatDateString(date);
+        setToday(date);
+        setDate(formattedDate);
+    };
+
     const buildCalendarTag = (calendarDays) => {
         return calendarDays.map((day, i) => {
             if (day.getMonth() < currentMonth.getMonth()) {
@@ -108,7 +122,8 @@ const Calendar = ({
                 <p
                     key={i}
                     // 당일이면 today 추가
-                    className={`current`}
+                    className={today.getDate()===day.getDate()&&today.getMonth()===day.getMonth() ? `current today` : `current`}
+                    onClick={() => handleDateClick(day)}
                 >
                     {day.getDate()}
                 </p>
