@@ -218,6 +218,7 @@
 }
 .mainContainer .mainWrap .todoContainer .friendListWrap .friendList .friend img {
   height: 50px;
+  border-radius: 15px;
 }
 .mainContainer .mainWrap .todoContainer .friendListWrap .friendList .friend p {
   text-align: center;

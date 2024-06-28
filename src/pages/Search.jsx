@@ -1,18 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import "../styles/search.css";
-import Header from "../component/Header.jsx";
 // img
 import basicProfile from "../assets/images/basicProfile.svg";
 import nondisclosure from "../assets/images/nondisclosure.svg";
 import publicAcc from "../assets/images/public.svg";
 
+import Header from "../component/Header.jsx";
+
 const Search = () => {
+    const location = useLocation();
+    const [searchQuery, setSearchQuery] = useState('');
+
+    useEffect(() => {
+        const query = new URLSearchParams(location.search);
+        const queryParam = query.get('query');
+        setSearchQuery(queryParam || '');
+    }, [location.search]);
     return (
         <>
             <div className="searchContainer">
                 <Header />
                 <div className="searchWrap">
-                    <p className="searchResult"><span>do</span>검색 결과</p>
+                    <p className="searchResult"><span>{searchQuery}</span>검색 결과</p>
                     <ul className="searchList">
                         <li className="list">
                             <img src={basicProfile} alt={"프로필 사진"}/>

@@ -4,6 +4,7 @@ import "../styles/header.css";
 import logo from "../assets/images/logo.svg";
 import friendRequest from "../assets/images/friendRequest.svg";
 import { useNavigate } from "react-router-dom";
+import RequestFriendList from "./RequestFriendList.jsx";
 
 const Header = () => {
     const navigate = useNavigate();
@@ -11,7 +12,7 @@ const Header = () => {
 
     const handleKeyPress = (event) => {
         if (event.key === 'Enter' && searchValue.trim() !== '') {
-            navigate("/search");
+            navigate(`/search?query=${encodeURIComponent(searchValue.trim())}`);
         }
     };
 
@@ -30,7 +31,9 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="headerOption">
-                    <button className="friendRequest"><img src={friendRequest} alt={"친구요청"}/></button>
+                    <button className="friendRequest"><img src={friendRequest} alt={"친구요청"}/>
+                        <RequestFriendList></RequestFriendList>
+                    </button>
                     <input
                         type="text"
                         className="search"

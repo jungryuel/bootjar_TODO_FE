@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "PretendardReqular";
+  src: url("../assets/fonts/Pretendard-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "PretendardBold";
+  src: url("../assets/fonts/Pretendard-Bold.otf") format("opentype");
+}
+.requestFriendList {
+  position: absolute;
+  bottom: -210px;
+  left: -180px;
+  height: 200px;
+  cursor: default;
+  background-color: #FFFFFF;
+  width: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+  overflow: auto;
+}
+.requestFriendList .list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.requestFriendList .list:last-child {
+  margin-bottom: 0;
+}
+.requestFriendList .list .friend button {
+  text-decoration: underline;
+}
+.requestFriendList .list .requestBtn button:first-child {
+  margin-right: 20px;
+}
+.requestFriendList .list .requestBtn button:first-child img {
+  height: 12px;
+}
+.requestFriendList .list .requestBtn button:last-child img {
+  height: 13px;
+}
+
+/*# sourceMappingURL=requestFriendList.css.map */
