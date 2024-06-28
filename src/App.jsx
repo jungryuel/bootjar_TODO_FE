@@ -12,7 +12,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Todo />}></Route>
+          <Route path="/" element={<Main />}></Route>
           {/*<Route path="/product/*" element={<Product />}></Route>*/}
           {/*<Route path="*" element={<NotFound />}></Route>*/}
         </Routes>
