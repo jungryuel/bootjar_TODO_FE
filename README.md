@@ -1,6 +1,4 @@
-# devops 프로젝트
-
-# U and ME Todo chapter
+# U and ME TodoList
 
 ### 프로젝트 진행 기간
 
@@ -59,6 +57,10 @@ Nest.js 10.3.2
 TypeScript: 5.4.3
 
 Spring RestTemplate
+
+Spring Webflux
+
+Spring data R2DBC
 
 **FE**
 
