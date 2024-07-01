@@ -107,6 +107,8 @@ Jenkins 2.462
 
 **김부자 트러블 슈팅** : https://marshy-mall-9f3.notion.site/98142a17f9cf42ab9543b8afe5af0426?pvs=4
 
+**박미람 트러블 슈팅** : https://marshy-mall-9f3.notion.site/b3ec8e69529a477ebeeab4ae66ebd52c?pvs=4
+
 
 ### 느낀 점
 **김정렬**
