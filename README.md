@@ -14,7 +14,7 @@
 
 저희는 이번에 여러 시트를 한 파일로 관리하기에 용이하고 생각해 Google Style Sheet를 통해 진행 했습니다 
 
-<img=src "![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/4b7e0894-1b5c-4ece-b84c-1f981d8b0958/83986184-fa74-49e2-a0d1-930144656335/Untitled.png)">
+![Untitled (11)](https://github.com/encore-full-stack-5/bootjar_TODO_FE/assets/90687921/08ebcff6-1b1d-43ab-9194-db2f5aeb0705)
 
 **WBS**: https://docs.google.com/spreadsheets/d/1CCqvga7DqJ_iyfcbldKJ72Xd_osNgHZfpzMe6PtB6O4/edit?usp=sharing
 
@@ -22,18 +22,16 @@
 
 [https://www.figma.com/design/KCd6x4OcEOx8VukktGiD2G/TODO?node-id=0-1&t=zabqcOsSOrY4XWXX-1](https://www.figma.com/design/KCd6x4OcEOx8VukktGiD2G/TODO?node-id=0-1&t=zabqcOsSOrY4XWXX-1)
 
-![Untitled](devops%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3%2073db94d6fa87409da1321ce143043f32/Untitled%201.png)
-
+![Untitled (12)](https://github.com/encore-full-stack-5/bootjar_TODO_FE/assets/90687921/de776345-61b0-408b-94e3-15dd3d2acf59)
 ### ERD
 
-![Untitled](devops%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3%2073db94d6fa87409da1321ce143043f32/Untitled%202.png)
+![Untitled (15)](https://github.com/encore-full-stack-5/bootjar_TODO_FE/assets/90687921/70f3575f-ddd5-48ae-bc56-4c8cbf601b7a)
 
 이번 프로젝트는 MSA를 도입하게 되었고 그에 따라 위와 같이 테이블 분리를 통해 관리에 용이한 데이터 구조를 설계하게 되었습니다.
 
 ### 아키텍처 설계
 
-![Untitled](devops%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3%2073db94d6fa87409da1321ce143043f32/Untitled%203.png)
-
+![Untitled (14)](https://github.com/encore-full-stack-5/bootjar_TODO_FE/assets/90687921/9784fee0-9f0f-4277-a6a9-8f44f447a1d5)
 ### 사용 기술
 
 **BE**
