@@ -103,6 +103,8 @@ Jenkins 2.462
 
 **김정렬 트러블 슈팅** : [https://eastern-orchid-c48.notion.site/7165189d195640d296b3cc27e4cef3f6?pvs=4](https://www.notion.so/7165189d195640d296b3cc27e4cef3f6?pvs=21)
 
+**정희석 트러블 슈팅** : https://whispering-foxtail-e30.notion.site/BootJar-654cea701c564d68a712f662bac6eac8?pvs=4
+
 
 
 ### 느낀 점
