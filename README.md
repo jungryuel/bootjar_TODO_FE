@@ -14,7 +14,7 @@
 
 저희는 이번에 여러 시트를 한 파일로 관리하기에 용이하고 생각해 Google Style Sheet를 통해 진행 했습니다 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/4b7e0894-1b5c-4ece-b84c-1f981d8b0958/83986184-fa74-49e2-a0d1-930144656335/Untitled.png)
+<img=src "![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/4b7e0894-1b5c-4ece-b84c-1f981d8b0958/83986184-fa74-49e2-a0d1-930144656335/Untitled.png)">
 
 **WBS**: https://docs.google.com/spreadsheets/d/1CCqvga7DqJ_iyfcbldKJ72Xd_osNgHZfpzMe6PtB6O4/edit?usp=sharing
 
