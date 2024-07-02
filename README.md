@@ -72,8 +72,9 @@ redis stack server 7.2.0
 1. 프로그래밍 언어 및 프레임워크
 
 react  18.2.0
-
 JavaScript 20.11.1
+HTML5
+SCSS
 
 2. 라이브러리
    
