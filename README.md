@@ -1,4 +1,4 @@
-# U and ME TodoList
+# U and I TodoList
 
 ### 프로젝트 진행 기간
 
@@ -35,71 +35,90 @@
 **백엔드 (BE)**
 1. 프로그래밍 언어 및 프레임워크
 
-Java 17
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) ![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+<br/>
+* Nest.js 10.3.2<br/>
+* TypeScript: 5.4.3<br/>
+* Java 17<br/>
+* Spring boot 3.3.0<br/>
+* Spring Security<br/>
+* Spring Boot Actuator<br/>
+* Spring RestTemplate<br/>
+* Spring Webflux<br/>
+* Spring data R2DBC<br/>
 
-Spring boot 3.3.0
+<br/>
 
-Spring Security
+2. 테스트
 
-Spring Boot Actuator
+* Spring Boot Mockito<br/>
+* Junit
 
-Spring RestTemplate
-
-Spring Webflux
-
-Spring data R2DBC
-
-Nest.js 10.3.2
-
-TypeScript: 5.4.3
-
-2.테스트
-
-Spring Boot  Mockito
-
-Junit
+<br/>
 
 3. 빌드 및 의존성 관리
-Gradle 8 .8
 
-4. 데이터베이스/ 캐싱
+![Gradle](https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white)
+<br/>
 
-MySQL 8.0
+**데이터베이스/ 캐싱**
+<br/>
+![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
 
-redis stack server 7.2.0
+<br/>
 
 **프론트 엔드 (FE)**
 1. 프로그래밍 언어 및 프레임워크
 
-react  18.2.0
-JavaScript 20.11.1
-HTML5
-SCSS
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+
+<br/>
 
 2. 라이브러리
-   
-axios  1.7.2
+<br/>axios  1.7.2
+
+
+<br/>
+
+**디자인**
+
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+
+
+<br/>
 
 **클라우드**
-1. 서비스
+
+![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
 Google Cloud  Platform(computing Engine ,Storage)
 
-2.운영체제(OS)
-Debian
+<br/>
 
-3. 컨테이너 및 오케스트레이션
+**운영체제(OS)**
 
-Docker 26.1.4
+![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white)
 
-k8s 1.30.1
+<br/>
 
-4. 웹 서버
+**컨테이너 및 오케스트레이션**
 
-Nginx 1.27.0
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
 
-5.CI/CD
+<br/>
 
-Jenkins 2.462
+**웹 서버**
+
+![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
+
+<br/>
+
+**CI/CD**
+
+![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white)
+
+<br/>
 
 ### 트러블 슈팅
 
