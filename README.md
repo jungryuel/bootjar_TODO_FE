@@ -29,7 +29,7 @@
 
 ### 아키텍처 설계
 
-![bootjar drawio](https://github.com/encore-full-stack-5/bootjar_TODO_FE/assets/90687921/2920d7f7-d58f-408d-bb09-1fb5dd194b81)
+![bootjar](https://github.com/encore-full-stack-5/bootjar_TODO_FE/assets/90687921/f84e0bc2-2814-4c37-9c1c-4465a59b1e84)
 
 ### 사용 기술
 
