@@ -4,6 +4,14 @@
 
 2024-06-07 ~ 2024-06-30 총 23일간 진행
 
+댓글 : https://github.com/encore-full-stack-5/bootjarComment
+
+auth : https://github.com/encore-full-stack-5/bootjarAuth
+
+todo : https://github.com/encore-full-stack-5/bootjarTODO
+
+friend : https://github.com/encore-full-stack-5/bootjarFriend
+
 ### 기획 의도
 
 이번 프로젝트는 Todo Mate라는 어플리케이션의 개인화된 일정 관리와 지인과의 일정 공유에 감명을 받아 오마주 해서 진행 했습니다.
