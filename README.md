@@ -29,7 +29,7 @@
 
 ### 아키텍처 설계
 
-![Untitled (14)](https://github.com/encore-full-stack-5/bootjar_TODO_FE/assets/90687921/9784fee0-9f0f-4277-a6a9-8f44f447a1d5)
+![bootjar drawio](https://github.com/encore-full-stack-5/bootjarAuth/assets/90687921/c8bd13d2-c34e-45b6-b7e8-0e38e68491ed)
 ### 사용 기술
 
 **백엔드 (BE)**
